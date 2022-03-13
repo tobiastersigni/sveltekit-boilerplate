@@ -1,20 +1,31 @@
 <script lang="ts">
-        import SearchBar from '$lib/header/SearchBar.svelte';
+    import SearchBar from "$lib/header/SearchBar.svelte";
 </script>
+
 <svelte:head>
     <title>Create an account</title>
 </svelte:head>
 
 <h1>Create an account</h1>
 
-<SearchBar/>
+<SearchBar />
 
 <form method="POST" action="/signup">
     <fieldset>
         <label for="email">Email</label>
-        <input type="email" placeholder="user@email.net" name="email" required />
+        <input
+            type="email"
+            placeholder="user@email.net"
+            name="email"
+            required
+        />
         <label for="password">Password</label>
-        <input type="password" placeholder="Your password" name="password" required />
+        <input
+            type="password"
+            placeholder="Your password"
+            name="password"
+            required
+        />
         <label for="password">Password, again</label>
         <input
             type="password"
